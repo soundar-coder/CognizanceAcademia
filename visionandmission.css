@@ -1,0 +1,69 @@
+.mission-vision {
+  display: flex;
+  min-height: 60vh;
+}
+
+.mv-box {
+  flex: 1;
+  padding: 80px 60px;
+  color: #fff;
+}
+
+.mission {
+  background: linear-gradient(135deg, #0f766e, #0d9488);
+}
+
+.vision {
+  background: linear-gradient(135deg, #1e3a8a, #2563eb);
+}
+
+.mv-box h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.mv-box p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+}
+.journey {
+  padding: 80px 10%;
+  background: #f8fafc;
+  text-align: center;
+}
+
+.journey h2 {
+  font-size: 2.2rem;
+  margin-bottom: 50px;
+}
+
+.timeline {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+}
+
+.step {
+  background: #fff;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+}
+
+.step span {
+  display: inline-block;
+  background: #0f766e;
+  color: #fff;
+  padding: 10px 14px;
+  border-radius: 50%;
+  margin-bottom: 15px;
+}
+@media (max-width: 768px) {
+  .mission-vision {
+    flex-direction: column;
+  }
+
+  .timeline {
+    grid-template-columns: 1fr;
+  }
+}
