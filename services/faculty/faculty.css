@@ -1,0 +1,115 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: #f5f7fa;
+    color: #333;
+}
+
+/* Header */
+.hero {
+    background: #0b5d57;
+    color: white;
+    text-align: center;
+    padding:  20px;
+}
+
+.hero h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 18px;
+}
+
+/* Intro */
+.intro {
+    max-width: 900px;
+    margin: 40px auto;
+    text-align: center;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+/* Pillars Section */
+.pillars {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 30px;
+    padding: 40px 60px;
+}
+
+.pillar-card {
+    background: white;
+    border-radius: 12px;
+    padding: 25px;
+    text-align: center;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+    transition: transform 0.3s ease;
+}
+
+.pillar-card:hover {
+    transform: translateY(-8px);
+}
+
+.pillar-card span {
+    font-size: 34px;
+    margin-bottom: 10px;
+    display: inline-block;
+}
+
+.pillar-card h3 {
+    margin: 15px 0;
+    color: #0b5d57;
+}
+
+.pillar-card ul {
+    list-style: none;
+    font-size: 14px;
+}
+
+.pillar-card li {
+    margin-bottom: 8px;
+}
+
+/* Outcomes */
+.outcomes {
+    background: #eef3f2;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.outcomes h2 {
+    margin-bottom: 20px;
+    color: #0b5d57;
+}
+
+.outcome-list p {
+    margin-bottom: 10px;
+    font-weight: 500;
+}
+
+/* CTA */
+.cta {
+    background: #ffc107;
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.cta h2 {
+    margin-bottom: 20px;
+}
+
+.btn {
+    background: #0b5d57;
+    color: white;
+    padding: 12px 25px;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: bold;
+}

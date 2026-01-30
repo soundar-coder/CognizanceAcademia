@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Service Details</title>
+    <link rel="stylesheet" href="css/services.css">
+</head>
+<body>
+
+<header class="top-header">
+    <h1 id="serviceTitle"></h1>
+    <p id="serviceTagline"></p>
+</header>
+
+<section class="details-container">
+    <h2>What We Offer</h2>
+    <ul id="serviceList"></ul>
+
+    <a href="services.html" class="back-btn">← Back to Services</a>
+</section>
+
+<script>
+const params = new URLSearchParams(window.location.search);
+const type = params.get("type");
+
+const title = document.getElementById("serviceTitle");
+const tagline = document.getElementById("serviceTagline");
+const list = document.getElementById("serviceList");
+
+if (type === "institution") {
+    title.innerText = "Institutional Services";
+    tagline.innerText = "Strengthening academic excellence";
+    list.innerHTML = `
+        <li>NAAC & NBA accreditation support</li>
+        <li>Academic planning & consultancy</li>
+        <li>Digital campus transformation</li>
+        <li>Faculty capacity building</li>
+    `;
+}
+else if (type === "faculty") {
+    title.innerText = "Faculty Development";
+    tagline.innerText = "Empowering educators";
+    list.innerHTML = `
+        <li>Pedagogical training</li>
+        <li>Research & publication support</li>
+        <li>Technology integration workshops</li>
+        <li>Professional mentoring</li>
+    `;
+}
+else if (type === "student") {
+    title.innerText = "Student Programs";
+    tagline.innerText = "Career-ready skill development";
+    list.innerHTML = `
+        <li>Technical skill training</li>
+        <li>Internship guidance</li>
+        <li>Placement readiness programs</li>
+        <li>Soft skill development</li>
+    `;
+}
+else if (type === "school") {
+    title.innerText = "School Services";
+    tagline.innerText = "Future-ready education";
+    list.innerHTML = `
+        <li>CBSE CS syllabus training</li>
+        <li>Teacher upskilling programs</li>
+        <li>Student coding bootcamps</li>
+        <li>Digital literacy initiatives</li>
+    `;
+}
+</script>
+
+</body>
+</html>
