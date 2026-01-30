@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Testimonials</title>
+  <link rel="stylesheet" href="testimonial.css">
+</head>
+<body>
+
+<!-- HEADER -->
+<section class="testimonial-header">
+  <h1>What People Say About Us</h1>
+  <p>Trusted by students, faculty & institutions</p>
+</section>
+
+<!-- TESTIMONIAL CARDS -->
+<section class="testimonial-section">
+  <div class="testimonial-container" id="testimonialContainer">
+
+    <div class="testimonial-card highlight faculty">
+      <div class="stars">★★★★★</div>
+      <p>"An excellent platform that supports institutional growth and quality education."</p>
+      <h4>Dr. Rajesh Kumar</h4>
+      <span>Faculty</span>
+    </div>
+
+    <div class="testimonial-card student">
+      <div class="stars">★★★★☆</div>
+      <p>"Very helpful programs with practical exposure."</p>
+      <h4>Ananya</h4>
+      <span>Student</span>
+    </div>
+
+    <div class="testimonial-card institution">
+      <div class="stars">★★★★★</div>
+      <p>"A reliable solution for managing academic services."</p>
+      <h4>ABC College</h4>
+      <span>Institution</span>
+    </div>
+
+  </div>
+</section>
+
+<!-- FORM -->
+<section class="form-section">
+  <h2>Submit Your Testimonial</h2>
+
+  <form id="testimonialForm">
+    <input type="text" id="name" placeholder="Your Name" required>
+
+    <select id="role" required>
+      <option value="">Select Role</option>
+      <option value="student">Student</option>
+      <option value="faculty">Faculty</option>
+      <option value="institution">Institution</option>
+    </select>
+
+    <select id="rating" required>
+      <option value="">Rating</option>
+      <option value="5">★★★★★</option>
+      <option value="4">★★★★☆</option>
+      <option value="3">★★★☆☆</option>
+    </select>
+
+    <textarea id="message" placeholder="Your Review" required></textarea>
+
+    <button type="submit">Submit</button>
+  </form>
+
+  <p id="statusMsg"></p>
+</section>
+
+<script src="testimonial.js"></script>
+</body>
+</html>
