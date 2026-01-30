@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f5f7fa;
+}
+
+/* HERO SECTION */
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 20px;       /* smaller height */
+    background: #025751;      /* your color */
+    color: white;             /* text stays white */
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.hero h1 {
+    font-size: 32px;    /* slightly smaller to match small hero */
+    margin: 0;
+}
+
+.hero img {
+    width: 120px;
+    height: auto;
+}
+
+
+/* COURSES GRID */
+.courses-container {
+    max-width: 1300px;
+    margin: auto;
+    padding: 40px 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
+    gap: 25px;
+}
+
+/* COURSE CARD */
+.course-card {
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0px 4px 25px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: 0.3s;
+}
+
+.course-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0px 6px 30px rgba(0, 0, 0, 0.2);
+}
+
+
+.course-card img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+/* CONTENT */
+.content {
+    padding: 20px;
+}
+del{
+    color: #025751;
+}
+
+.content h3 {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.content p {
+    font-size: 15px;
+    color: #555;
+}
+
+/* META INFO */
+.meta {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+.price-row {
+    margin: 15px 0;
+}
+
+.price {
+    color: #ff9800;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+/* BUTTON */
+button {
+    width: 100%;
+    padding: 12px;
+    background: #ffb300;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #ff8f00;
+}
+@media (max-width:600px){
+    .hero p{
+        display: none;
+    }
+    
+    .hero h1{
+        
+    margin-right: 100px;
+    }
+}
