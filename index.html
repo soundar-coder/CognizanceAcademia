@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cognizance Academia</title>
+  <link rel="stylesheet" href="style.css" />
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+  <header>
+    <div class="header-left">
+      <img src="images/logo.jpeg" alt="Cognizance Academia Logo" />
+      <h1>Cognizance Academia</h1>
+    </div>
+    <div class="header-right">
+      <span><i class="fas fa-phone"></i> +91 98765 43210</span>
+      <span><i class="fas fa-envelope"></i> info@academy.com</span>
+    </div>
+  </header>
+
+  <nav>
+    <input type="checkbox" id="menu-toggle" />
+    <label for="menu-toggle" class="menu-icon">&#9776;</label>
+    <ul class="menu">
+      <li><a href="#">Home</a></li>
+      <li><a href="#about">About Us</a></li>
+      <li class="dropdown">
+        <a href="#">Services <i class="fas fa-caret-down"></i></a>
+        <div class="dropdown-content">
+          <a href="#school">School</a>
+          <a href="#faculty">Faculty</a>
+          <a href="#infrastructure">Infrastructure</a>
+        </div>
+      </li>
+      <li><a href="#courses">Courses</a></li>
+      <li><a href="#news">News & Events</a></li>
+      <li><a href="#blog">Blog</a></li>
+      <li><a href="#testimonials">Testimonials</a></li>
+      <li><a href="#contact">Contact Us</a></li>
+    </ul>
+  </nav>
+
+  <section class="hero">
+    <div class="hero-overlay">
+      <h1>Welcome to Cognizance Academia</h1>
+      <p>Empowering educators, students, and institutions to thrive in a digital world.</p>
+    </div>
+  </section>
+
+  <section id="about">
+    <h2>About Us</h2>
+    <p><strong>Vision:</strong> To inspire a global culture of continuous learning, innovation, and ethical excellence.</p>
+    <p><strong>Mission:</strong> We provide high-quality, globally recognized training programs in cutting-edge technologies, ethical practices, and lifelong learning strategies.</p>
+  </section>
+
+  <section id="school">
+    <h2>Services for Schools</h2>
+    <p>Curriculum-aligned CS training, teacher workshops, coding bootcamps, and project-based learning.</p>
+  </section>
+
+  <section id="faculty">
+    <h2>Services for Faculty</h2>
+    <p>Pedagogical training, research support, mentorship, technology integration, and career advancement programs.</p>
+  </section>
+
+  <section id="infrastructure">
+    <h2>Infrastructure Services</h2>
+    <p>Campus planning, smart classrooms, IT infrastructure, green campus initiatives, and safety/security solutions.</p>
+  </section>
+
+  <section id="courses">
+    <h2>Courses</h2>
+    <div class="grid">
+      <div class="card">Programming & Software Development</div>
+      <div class="card">Web Development</div>
+      <div class="card">Data Science & AI</div>
+      <div class="card">Cybersecurity</div>
+      <div class="card">Cloud & DevOps</div>
+      <div class="card">IoT & Blockchain</div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <p><i class="fas fa-envelope"></i> info@academy.com</p>
+    <p><i class="fas fa-phone"></i> +91 98765 43210</p>
+    <form>
+      <input type="text" placeholder="Your Name" required /><br /><br />
+      <input type="email" placeholder="Your Email" required /><br /><br />
+      <textarea placeholder="Your Message" required></textarea><br /><br />
+      <button type="submit">Send Inquiry</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2026 Cognizance Academia. All Rights Reserved.</p>
+  </footer>
+</body>
+</html>
