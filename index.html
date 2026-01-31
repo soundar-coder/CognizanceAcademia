@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Cognizance Academia</title>
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="IndexStyle.css" />
   <!-- Font Awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
@@ -12,10 +12,11 @@
   <header>
     <div class="header-left">
       <img src="images/logo.jpeg" alt="Cognizance Academia Logo" />
-      <h1>Cognizance Academia</h1>
+      <img src="images/BrandName.jpeg" alt="Cognizance Academia Logo" />
+      <!--<h1>Cognizance Academia</h1>-->
     </div>
     <div class="header-right">
-      <span><i class="fas fa-phone"></i> +91 98765 43210</span>
+      <span class="phone"><i class="fas fa-phone"></i> +91 98765 43210</span>
       <span><i class="fas fa-envelope"></i> info@academy.com</span>
     </div>
   </header>
@@ -25,77 +26,110 @@
     <label for="menu-toggle" class="menu-icon">&#9776;</label>
     <ul class="menu">
       <li><a href="#">Home</a></li>
-      <li><a href="#about">About Us</a></li>
+      <li class="dropdown">
+        <a href="#">About Us <i class="fas fa-caret-down"></i></a>
+        <div class="dropdown-content">
+          <a href="vision and mission.html">Vision & Mission</a>
+          <a href="History&Values.html">Our History & Values</a>
+        </div>
+      </li>
       <li class="dropdown">
         <a href="#">Services <i class="fas fa-caret-down"></i></a>
         <div class="dropdown-content">
-          <a href="#school">School</a>
-          <a href="#faculty">Faculty</a>
-          <a href="#infrastructure">Infrastructure</a>
+          <a href="school.html">School</a>
+          <a href="faculty.html">Faculty</a>
+          <a href="institution.html">Institution</a>
+          <a href="student.html">Student</a>
         </div>
       </li>
-      <li><a href="#courses">Courses</a></li>
-      <li><a href="#news">News & Events</a></li>
-      <li><a href="#blog">Blog</a></li>
-      <li><a href="#testimonials">Testimonials</a></li>
-      <li><a href="#contact">Contact Us</a></li>
+      <li><a href="courses.html">Courses</a></li>
+      <li><a href="news and events.html">News & Events</a></li>
+      <li><a href="blog.html">Blog</a></li>
+      <li><a href="testimonial.html">Testimonials</a></li>
+      <li><a href="contactUs.html">Contact Us</a></li>
     </ul>
   </nav>
 
+  <!-- Hero Section -->
   <section class="hero">
     <div class="hero-overlay">
-      <h1>Welcome to Cognizance Academia</h1>
-      <p>Empowering educators, students, and institutions to thrive in a digital world.</p>
+      <h1 class="main-heading">Where Knowledge Meets Innovation</h1>
+      <h3 class="sub-tagline">Transforming Education. Empowering Minds. Building Futures.</h3>
     </div>
   </section>
 
-  <section id="about">
-    <h2>About Us</h2>
-    <p><strong>Vision:</strong> To inspire a global culture of continuous learning, innovation, and ethical excellence.</p>
-    <p><strong>Mission:</strong> We provide high-quality, globally recognized training programs in cutting-edge technologies, ethical practices, and lifelong learning strategies.</p>
+  <!-- Introduction Section -->
+  <section id="introduction">
+    <div class="intro-container">
+      <div class="intro-text">
+        <h2>Introduction</h2>
+        <p>
+          Cognizance Academia is a premier educational and professional development institution committed to enhancing knowledge, skills, and competencies. 
+          We specialize in software training, faculty development programs, and capacity-building initiatives designed to meet the evolving needs of learners, educators, and institutions.
+        </p>
+        <p class="catchy-tagline"><i class="fas fa-lightbulb"></i> Transforming Education. Empowering Minds. Building Futures.</p>
+      </div>
+      <div class="intro-image">
+        <img src="images/Intro.png" alt="Education Innovation" />
+      </div>
+    </div>
   </section>
 
-  <section id="school">
-    <h2>Services for Schools</h2>
-    <p>Curriculum-aligned CS training, teacher workshops, coding bootcamps, and project-based learning.</p>
-  </section>
-
-  <section id="faculty">
-    <h2>Services for Faculty</h2>
-    <p>Pedagogical training, research support, mentorship, technology integration, and career advancement programs.</p>
-  </section>
-
-  <section id="infrastructure">
-    <h2>Infrastructure Services</h2>
-    <p>Campus planning, smart classrooms, IT infrastructure, green campus initiatives, and safety/security solutions.</p>
-  </section>
-
+  <!-- Courses Slider Section -->
   <section id="courses">
     <h2>Courses</h2>
-    <div class="grid">
-      <div class="card">Programming & Software Development</div>
-      <div class="card">Web Development</div>
-      <div class="card">Data Science & AI</div>
-      <div class="card">Cybersecurity</div>
-      <div class="card">Cloud & DevOps</div>
-      <div class="card">IoT & Blockchain</div>
+    <div class="slider-container">
+      <button class="slider-btn prev">&#10094;</button>
+      <div class="slider-track">
+        <div class="course-card bg1">
+          <img src="images/Assests/Intro-to-Programming-1024x1024 (1) (1).png" alt="Programming" />
+          <p>Programming & Software Development</p>
+        </div>
+        <div class="course-card bg2">
+          <img src="images/Assests/Full-Stack-Developerimg.jpg" alt="Web Development" />
+          <p>Web Development</p>
+        </div>
+        <div class="course-card bg3">
+          <img src="images/Assests/objectProgrammingLan..._imresizer.jpg" alt="Data Science" />
+          <p>Data Science & AI</p>
+        </div>
+        <div class="course-card bg4">
+          <img src="images/Assests/cyber-security.jpg" alt="Cybersecurity" />
+          <p>Cybersecurity</p>
+        </div>
+        <div class="course-card bg5">
+          <img src="images/Assests/ML.webp" alt="Cloud & DevOps" />
+          <p>Cloud & DevOps</p>
+        </div>
+        <div class="course-card bg6">
+          <img src="images/Assests/dsaImages_imresizer.jpg" alt="IoT & Blockchain" />
+          <p>IoT & Blockchain</p>
+        </div>
+      </div>
+      <button class="slider-btn next">&#10095;</button>
     </div>
-  </section>
+  </section>  
 
+  <!-- Contact Section -->
   <section id="contact">
     <h2>Contact Us</h2>
-    <p><i class="fas fa-envelope"></i> info@academy.com</p>
-    <p><i class="fas fa-phone"></i> +91 98765 43210</p>
-    <form>
-      <input type="text" placeholder="Your Name" required /><br /><br />
-      <input type="email" placeholder="Your Email" required /><br /><br />
-      <textarea placeholder="Your Message" required></textarea><br /><br />
-      <button type="submit">Send Inquiry</button>
-    </form>
+    <div class="contact-container">
+      <div class="contact-info">
+        <p><i class="fas fa-phone"></i> +91 98765 43210</p>
+        <p><i class="fas fa-envelope"></i> info@academy.com</p>
+        <p><i class="fas fa-map-marker-alt"></i> 123 Knowledge Street, Chennai, Tamil Nadu</p>
+      </div>
+      <div class="contact-image">
+        <img src="images/Location.png" alt="Location Map" />
+      </div>
+    </div>
   </section>
-
+  
   <footer>
     <p>&copy; 2026 Cognizance Academia. All Rights Reserved.</p>
   </footer>
+
+<script src="index.js"></script>
+
 </body>
 </html>
