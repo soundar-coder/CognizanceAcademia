@@ -391,7 +391,8 @@ footer {
   }
 
   .menu-icon {
-    display: block;
+    display: flex;
+    flex-direction: row-reverse;
   }
 
   .dropdown-content {
