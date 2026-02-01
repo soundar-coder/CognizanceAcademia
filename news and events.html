@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>News & Events | Cognizance Academia</title>
+  <link rel="stylesheet" href="IndexStyle.css" />
+  <link rel="stylesheet" href="news and events.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+  <nav class="navbar-with-logo" style="margin-bottom:0; display: flex; align-items: center; gap: 10px;">
+    <a href="index.html" class="nav-logo" style="display: flex; align-items: center; padding: 0 10px 0 0;">
+      <img src="images/logo2.jpeg" alt="Cognizance Academia Logo" style="height: 48px; width: auto; border-radius: 8px;" />
+    </a>
+    <input type="checkbox" id="menu-toggle" />
+    <label for="menu-toggle" class="menu-icon">&#9776;</label>
+    <ul class="menu">
+      <li><a href="index.html">Home</a></li>
+      <li class="dropdown">
+        <a href="#">About Us <i class="fas fa-caret-down"></i></a>
+        <div class="dropdown-content">
+          <a href="vision and mission.html">Vision & Mission</a>
+          <a href="History&Values.html">Our History & Values</a>
+        </div>
+      </li>
+      <li class="dropdown">
+        <a href="#">Services <i class="fas fa-caret-down"></i></a>
+        <div class="dropdown-content">
+          <a href="school.html">School</a>
+          <a href="faculty.html">Faculty</a>
+          <a href="institution.html">Institution</a>
+          <a href="student.html">Student</a>
+        </div>
+      </li>
+      <li><a href="courses.html">Courses</a></li>
+      <li><a href="news and events.html">News & Events</a></li>
+      <li><a href="blog.html">Blog</a></li>
+      <li><a href="testimonial.html">Testimonials</a></li>
+      <li><a href="contactUs.html">Contact Us</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <section class="news-events modern-news">
+      <div id="sample">
+        <h1>News & Events</h1>
+        <p class="subtitle">Latest updates, programs, and upcoming events</p>
+      </div>
+      <div class="cards">
+        <!-- News Card -->
+        <div class="card">
+          <span class="tag news"><i class="fas fa-newspaper"></i> News</span>
+          <h3>New Industry-Focused Programs Launched</h3>
+          <p class="date"><i class="fas fa-calendar-alt"></i> Jan 2026</p>
+          <p>
+            Cognizance Academia introduces practical, industry-aligned programs
+            designed to prepare learners for real-world challenges.
+          </p>
+          <a href="#">Read More <i class="fas fa-arrow-right"></i></a>
+        </div>
+
+        <!-- Event Card -->
+        <div class="card">
+          <span class="tag event"><i class="fas fa-bolt"></i> Upcoming Event</span>
+          <h3>Live Workshop: Introduction to Data Science</h3>
+          <p class="date"><i class="fas fa-calendar-alt"></i> 15 Feb 2026</p>
+          <p>
+            A beginner-friendly live workshop covering data fundamentals,
+            tools, and real-world use cases.
+          </p>
+          <a href="#">Register Now <i class="fas fa-arrow-right"></i></a>
+        </div>
+
+        <!-- Program Card -->
+        <div class="card">
+          <span class="tag program"><i class="fas fa-graduation-cap"></i> New Program</span>
+          <h3>Cloud & DevOps Fundamentals</h3>
+          <p class="date"><i class="fas fa-clock"></i> 8 Weeks</p>
+          <p>
+            Learn cloud computing basics, DevOps tools, and deployment
+            strategies with hands-on projects.
+          </p>
+          <a href="#">View Program <i class="fas fa-arrow-right"></i></a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Cognizance Academia. All rights reserved.</p>
+  </footer>
+</body>
+</html>

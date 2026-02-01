@@ -1,0 +1,83 @@
+.pillars {
+  padding: 80px 10%;
+  text-align: center;
+  border-top: #0d9488 100px solid;
+}
+
+
+.pillars h2 {
+  font-size: 2.3rem;
+  margin-bottom: 50px;
+  color: #0f766e;
+}
+
+.pillar-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+}
+
+.pillar {
+  background: #fff;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+}
+
+.pillar img {
+  width: 60px;
+  margin-bottom: 15px;
+}
+
+.pillar h3 {
+  margin-bottom: 10px;
+  color: #1e3a8a;
+}
+
+@media (max-width: 768px) {
+  .pillar-grid {
+    grid-template-columns: 1fr;
+  }
+}
+.audience {
+  padding: 70px 10%;
+  background: linear-gradient(135deg, #0f766e, #0d9488);
+  color: #fff;
+  text-align: center;
+}
+
+.audience h2 {
+  font-size: 2.2rem;
+  margin-bottom: 40px;
+}
+
+.audience-box {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.audience-box div {
+  background: rgba(255,255,255,0.15);
+  padding: 15px 25px;
+  border-radius: 30px;
+  font-size: 1rem;
+}
+.roadmap {
+  padding: 80px 15%;
+  text-align: center;
+  background: #f8fafc;
+}
+
+.roadmap h2 {
+  font-size: 2.3rem;
+  margin-bottom: 20px;
+  color: #1e3a8a;
+}
+
+.roadmap p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #333;
+}

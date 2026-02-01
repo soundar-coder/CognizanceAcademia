@@ -1,0 +1,173 @@
+/* Reset */
+* {
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Page background */
+body {
+  background: #f4f7f6;
+}
+
+.site-header {
+  width: 100%;
+  background: #ffffff;
+  border-bottom: 1px solid #e6efec;
+}
+
+.site-header {
+  width: 100%;
+  padding: 16px 24px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  background: #ffffff;
+  border-bottom: 1px solid #e6efec;
+}
+
+.logo {
+  margin: 0;
+  font-size: 20px;
+  font-weight: 600;
+  color: #003b2f;
+}
+
+.nav-links {
+  display: flex;
+  gap: 22px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  font-size: 14px;
+  color: #4b6f68;
+}
+
+.nav-links a.active {
+  color: #004b3c;
+  font-weight: 500;
+}
+
+
+/* Page container */
+.form-page {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 20px;
+}
+
+/* Card */
+.form-card {
+  width: 100%;
+  max-width: 480px;
+  background: #ffffff;
+  padding: 35px;
+  border-radius: 20px;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.08);
+}
+
+/* Heading */
+.form-card h1 {
+  font-size: 30px;
+  color: #003b2f;
+  margin-bottom: 10px;
+}
+
+/* Subtitle */
+.form-subtitle {
+  font-size: 14px;
+  color: #4b6f68;
+  margin-bottom: 30px;
+  line-height: 1.6;
+}
+
+/* Form groups */
+.form-group {
+  margin-bottom: 18px;
+}
+
+/* Labels */
+.form-group label {
+  display: block;
+  font-size: 13px;
+  font-weight: 500;
+  margin-bottom: 6px;
+  color: #003b2f;
+}
+
+/* Inputs */
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 12px 14px;
+  border-radius: 12px;
+  border: 1px solid #dbe5e2;
+  font-size: 14px;
+  outline: none;
+  transition: 0.2s;
+}
+
+/* Focus state */
+.form-group input:focus,
+.form-group textarea:focus {
+  border-color: #004b3c;
+  box-shadow: 0 0 0 2px rgba(0, 75, 60, 0.15);
+}
+
+/* Button */
+button {
+  width: 100%;
+  padding: 13px;
+  background: #004b3c;
+  color: #ffffff;
+  border: none;
+  border-radius: 12px;
+  font-size: 15px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+/* Button hover */
+button:hover {
+  background: #00392e;
+}
+
+.site-footer {
+  text-align: center;
+  padding: 20px;
+  font-size: 13px;
+  color: #6b8b84;
+  background: #f4f7f6;
+}
+
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+  .form-card {
+    padding: 25px;
+  }
+
+  .form-card h1 {
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 600px) {
+  .site-header {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+

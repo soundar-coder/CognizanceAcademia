@@ -1,0 +1,150 @@
+/* Global Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Header */
+.page-header {
+    background: #0b5d57;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.page-header h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.page-header p {
+    font-size: 16px;
+    opacity: 0.9;
+}
+
+/* Services Section */
+.services {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 60px 40px;
+    flex-wrap: wrap;
+    background: #f5f7f7;
+}
+
+.service-card {
+    background: white;
+    width: 300px;
+    padding: 25px;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    transition: 0.3s ease;
+}
+
+.service-card h3 {
+    color: #0b5d57;
+    margin-bottom: 15px;
+}
+
+.service-card p {
+    font-size: 14px;
+    color: #444;
+    line-height: 1.6;
+}
+
+.service-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 35px rgba(11, 93, 87, 0.25);
+}
+
+/* Value Section */
+.value-section {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.value-section h2 {
+    color: #0b5d57;
+    margin-bottom: 25px;
+}
+
+.value-list p {
+    font-size: 15px;
+    margin: 10px 0;
+}
+
+/* Learning Model */
+.learning-model {
+    background: #f5f7f7;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.learning-model h2 {
+    color: #0b5d57;
+    margin-bottom: 30px;
+}
+
+.model-flow {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.model-step {
+    background: white;
+    padding: 15px 25px;
+    border-radius: 30px;
+    font-weight: 600;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+}
+
+.arrow {
+    font-size: 20px;
+    font-weight: bold;
+    color: #0b5d57;
+}
+
+/* CTA Section */
+.cta {
+    background: #0b5d57;
+    color: white;
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.cta h2 {
+    margin-bottom: 15px;
+}
+
+.cta p {
+    margin-bottom: 25px;
+    font-size: 15px;
+}
+
+.cta-btn {
+    display: inline-block;
+    padding: 12px 30px;
+    background: white;
+    color: #0b5d57;
+    text-decoration: none;
+    border-radius: 30px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.cta-btn:hover {
+    background: #e6f2f1;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .services {
+        padding: 40px 20px;
+    }
+}

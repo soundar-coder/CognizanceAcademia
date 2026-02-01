@@ -1,0 +1,529 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background-color: #f9f9f9;
+}
+
+/* Header */
+header {
+  background: #fff;
+  color: #016861;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+  flex-wrap: wrap;
+}
+
+.header-left {
+  display: flex;
+  align-items: center;
+}
+
+.header-left img {
+  height: 60px;
+  margin-right: 15px;
+}
+
+.header-left h1 {
+  margin: 0;
+  font-size: 1.8em;
+}
+
+.header-right {
+  display: flex;
+  gap: 20px;
+  font-size: 0.95em;
+  align-items: center;
+}
+
+.header-right span i {
+  margin-right: 6px;
+}
+
+.phone{
+  margin-right: 17px;
+}
+
+/* Navigation */
+nav {
+  background: #016861;
+  position: relative;
+}
+/* --- Modern Hero Section --- */
+.hero-modern {
+  position: relative;
+  width: 100%;
+  height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 40px;
+  background: #ffffff;
+  overflow: hidden;
+}
+
+.hero-content {
+  z-index: 2;
+  max-width: 900px;
+  text-align: left;
+}
+
+.hero-modern h1 {
+  font-size: 50px;
+  font-weight: 700;
+  color: #0f172a;
+  line-height: 1.2;
+}
+
+.highlight {
+  color: #2e74ff;
+}
+
+.stats {
+  margin-top: 30px;
+  display: flex;
+  gap: 50px;
+  flex-wrap: wrap;
+}
+
+.stat-box h3 {
+  font-size: 26px;
+  font-weight: 700;
+  color: #0f172a;
+}
+
+.stat-box p {
+  font-size: 15px;
+  margin-top: 5px;
+  color: #4b5563;
+}
+
+/* Background Grid Like Error Makes Clever */
+.hero-bg {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 60%;
+  height: 100%;
+  background-image: linear-gradient(#e5e7eb 1px, transparent 1px),
+                    linear-gradient(90deg, #e5e7eb 1px, transparent 1px);
+  background-size: 80px 80px;
+  opacity: 0.5;
+  z-index: 1;
+}
+
+
+/* Responsive */
+@media (max-width: 900px) {
+  .hero-modern h1 {
+    font-size: 34px;
+  }
+  .stats {
+    gap: 20px;
+  }
+}
+
+
+.menu {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  list-style: none;
+  margin: 0;
+  padding: 10px 0;
+}
+
+.menu li {
+  position: relative;
+}
+
+.menu a {
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 15px;
+  display: block;
+  font-weight: bold;
+}
+
+.menu a:hover {
+  background-color: #444;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #444;
+  top: 100%;
+  left: 0;
+  min-width: 180px;
+  border-radius: 4px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+  z-index: 10;
+}
+
+.dropdown-content a {
+  display: block;
+  padding: 12px 15px;
+  color: #fff;
+  text-decoration: none;
+  transition: background 0.3s;
+}
+
+.dropdown-content a:hover {
+  background-color: #555;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.menu-icon {
+  display: none;
+  font-size: 24px;
+  color: #fff;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+#menu-toggle {
+  display: none;
+}
+
+/* Hero Section */
+.hero {
+  width: 100%;
+  min-height: 85vh;
+  background: url('images/background.png') no-repeat center center;
+  background-size: cover;
+  background-attachment: fixed;
+  color: #fff;
+  text-align: center;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-overlay {
+  background: rgba(0,0,0,0.55);
+  padding: 40px;
+  border-radius: 8px;
+  animation: fadeIn 2s ease-in-out;
+}
+
+.main-heading {
+  font-size: 3em;
+  margin-bottom: 15px;
+  animation: slideDown 1.5s ease-in-out;
+}
+
+.sub-tagline {
+  font-size: 1.5em;
+  font-weight: 400;
+  animation: fadeInUp 2s ease-in-out;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slideDown {
+  from { transform: translateY(-50px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+
+@keyframes fadeInUp {
+  from { transform: translateY(50px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+
+/* Introduction Section */
+#introduction {
+  background: #fff;
+  padding: 60px 20px;
+}
+
+.intro-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.intro-text {
+  flex: 1 1 500px;
+}
+
+.intro-text h2 {
+  color: #016861;
+  margin-bottom: 20px;
+  font-size:xx-large
+}
+
+.intro-text p {
+  font-size: 1.1em;
+  line-height: 1.6;
+}
+
+.catchy-tagline {
+  margin-top: 20px;
+  font-size: 1.3em;
+  font-weight: bold;
+  color: #016861;
+}
+
+.intro-image {
+  flex: 1 1 400px;
+  text-align: center;
+}
+
+.intro-image img {
+  max-width: 100%;
+  border-radius: 10px;
+}
+
+/* Sections */
+section {
+  padding: 40px 20px;
+  max-width: 100vw;
+  margin:auto;
+}
+
+section h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #016861;
+  font-size: xx-large;
+}
+
+/* Courses Slider */
+#courses {
+  background: #f4f4f4;
+  padding: 60px 20px;
+}
+
+.slider-container {
+  position: relative;
+  max-width: 1200px;
+  margin: auto;
+  overflow: hidden;
+}
+
+.slider-track {
+  gap: 30px;
+  display: flex;
+  transition: transform 0.5s ease;
+}
+
+
+
+
+/* Background colors */
+.bg1 { background: #016861; }
+.bg2 { background: #8497e8; }
+.bg3 { background: #006699; }
+.bg4 { background: #8e44ad; }
+.bg5 { background: #d35400; }
+.bg6 { background: #27ae60; }
+
+/* Arrow Buttons */
+.slider-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  border: none;
+  font-size: 2rem;
+  padding: 10px;
+  cursor: pointer;
+  z-index: 10;
+  border-radius: 50%;
+}
+
+.prev { left: 10px; }
+.next { right: 10px; }
+
+/* Responsive */
+@media (max-width: 768px) {
+  .course-card {
+    flex: 0 0 50%;
+  }
+}
+
+@media (max-width: 480px) {
+  .course-card {
+    flex: 0 0 100%;
+  }
+}
+
+/* Contact Section */
+#contact {
+  background: #fff;
+  padding: 60px 20px;
+}
+
+.contact-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.contact-info {
+  flex: 1 1 400px;
+  font-size: 1.1em;
+  line-height: 1.8;
+  color: #333;
+}
+
+.contact-info i {
+  color: #016861;
+  margin-right: 10px;
+}
+
+.contact-image {
+  flex: 200px;
+  text-align: center;
+}
+
+.contact-image img {
+  max-width: 50%;
+  border-radius: 10px;
+}
+
+/* Responsive Contact */
+@media (max-width: 768px) {
+  .contact-container {
+    flex-direction: column;
+    text-align: center;
+  }
+  .contact-info, .contact-image {
+    flex: 1 1 100%;
+  }
+}
+
+/* Footer */
+footer {
+  background: #016861;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .header-left h1 {
+    font-size: 1.5em;
+  }
+
+  .header-right {
+    flex-direction: column;
+    gap: 5px;
+    margin-top: 10px;
+    text-align: left;
+  }
+
+  .menu {
+    display: none;
+    flex-direction: column;
+    background-color: #333;
+  }
+
+  #menu-toggle:checked + .menu-icon + .menu {
+    display: flex;
+  }
+
+  .menu-icon {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+
+  .dropdown-content {
+    position: static;
+    box-shadow: none;
+  }
+
+  .hero {
+    background-attachment: scroll;
+    min-height: 70vh;
+  }
+
+  .main-heading {
+    font-size: 2em;
+  }
+
+  .sub-tagline {
+    font-size: 1.2em;
+  }
+
+  .intro-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .intro-text, .intro-image {
+    flex: 1 1 100%;
+  }
+}
+
+p {
+    font-size: 18px;       /* same as Tailwind text-lg */
+    color: #4b5563;        /* gray-600 */
+    line-height: 1.6;      /* clean spacing */
+    margin-bottom: 15px;   /* optional spacing */
+}
+
+.course-card {
+  flex: 0 0 30%;
+  background: #ffffff;
+  border-radius: 14px;
+  padding: 25px;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Course Image */
+.course-card img {
+  width: 100%;
+  max-width: 140px;
+  height: auto;
+  margin: auto;
+  display: block;
+  margin-bottom: 20px;
+}
+
+/* Heading */
+.course-card h3 {
+  font-size: 22px;
+  font-weight: 700;
+  color: #0f172a;
+  margin-bottom: 10px;
+}
+
+/* Description */
+.course-card p {
+  font-size: 16px;
+  font-weight: 400;
+  color: #4b5563;
+  margin-bottom: 10px;
+  line-height: 1.5;
+}
+
+/* Hover effect */
+.course-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+}
